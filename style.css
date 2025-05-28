@@ -1,0 +1,160 @@
+/* Импорт шрифта */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+}
+
+/* Сброс */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  font-family: 'Amatic SC';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  border-bottom: 1px solid #eee;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* Левая часть: логотип + заголовок */
+.leftheader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.leftheader img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.leftheader h1 {
+  font-size: 42px;
+}
+
+/* Правая часть: кнопки */
+.rightheader {
+  display: flex;
+  gap: 20px;
+}
+
+.rightheader button {
+  font-family: 'Amatic SC';
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 28px;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.rightheader button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+
+.auth-wrapper {
+  background: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.auth-container {
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  max-width: 1380px;
+  width: 100%;
+  min-height: 600px; /* ⬅️ Увеличено */
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.auth-form {
+  flex: 1;
+  padding: 60px; /* ⬅️ Немного увеличено */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.auth-form h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.auth-form p {
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.auth-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.auth-form input:focus {
+  border-color: #999;
+  outline: none;
+}
+
+.auth-form button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #135ca0;
+}
+
+.auth-image {
+  flex: 1;
+  background: #e0e0e0;
+  display: flex;
+  align-items: stretch; /* растягивает содержимое по высоте */
+  justify-content: center;
+  overflow: hidden; /* на всякий случай, чтобы ничего не выходило за границы */
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* чтобы изображение заполнило блок и не искажалось */
+  border-radius: 0 30px 30px 0;
+}
+
